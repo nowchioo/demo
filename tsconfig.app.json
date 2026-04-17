@@ -12,7 +12,8 @@
       "@modules/*": ["./modules/*"],
       "@components/*": ["./src/components/*"],
       "@stores/*": ["./src/stores/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@hooks/*": ["./src/hooks/*"]
     },
 
     // `vue-tsc --build` produces a .tsbuildinfo file for incremental type-checking.

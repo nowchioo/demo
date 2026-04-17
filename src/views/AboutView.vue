@@ -4,11 +4,13 @@
     <ul>
       <li>vue3</li>
       <li>vue-router5</li>
-      <li>pinia</li>
+      <li>{{ a }}</li>
     </ul>
   </div>
 </template>
-
+<script setup lang="ts">
+const a = ref(2)
+</script>
 <style lang="less" scoped>
 .about {
   width: 375px;
