@@ -1,15 +1,20 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div>This is an about page</div>
+    <ul>
+      <li>vue3</li>
+      <li>vue-router5</li>
+      <li>pinia</li>
+    </ul>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+<style lang="less" scoped>
+.about {
+  width: 375px;
+
+  div {
+    font-size: 12px;
   }
 }
 </style>

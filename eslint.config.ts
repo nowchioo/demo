@@ -20,7 +20,13 @@ export default defineConfigWithVueTs(
 
   ...pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
-
+  {
+    name: 'allow-any',
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+    },
+  },
   {
     ...pluginVitest.configs.recommended,
     files: ['src/**/__tests__/*'],
@@ -28,7 +34,7 @@ export default defineConfigWithVueTs(
 
   ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
   {
-    name: 'custom-rules',
+    name: 'modules-rules',
     rules: {
       'vue/multi-word-component-names': 'off',
     },
