@@ -14,11 +14,10 @@ npm run  build  --module=****  ## module指定打包的模块，默认为main
 
 ```typescript
 {
-'@': fileURLToPath(new URL('./src', import.meta.url)),
-'@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
-'@components': fileURLToPath(new URL('./src/components', import.meta.url)),
-'@stores': fileURLToPath(new URL('./src/stores', import.meta.url)),
-'@modules': fileURLToPath(new URL('./modules', import.meta.url)),
-'@current-routes': fileURLToPath(new URL(routePath, import.meta.url)),
+'@'=>'/src',
+'@utils' =>'/src/utils',
+'@components'=>'/src/components',
+'@stores'=>'/src/stores',
+'@modules'=>'/modules',
 },
 ```
