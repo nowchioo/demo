@@ -28,6 +28,7 @@ modules/
 '@utils' =>'/src/utils',
 '@components'=>'/src/components',
 '@stores'=>'/src/stores',
+'@hooks'=>'/src/hooks',
 '@modules'=>'/modules',
 },
 ```
