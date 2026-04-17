@@ -10,8 +10,9 @@ npm run dev  --module=****  ## module指定运行的模块，默认为main
 npm run  build  --module=****  ## module指定打包的模块，默认为main
 ```
 
-```typescript
 3.  alias
+
+```typescript
 {
 '@': fileURLToPath(new URL('./src', import.meta.url)),
 '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
